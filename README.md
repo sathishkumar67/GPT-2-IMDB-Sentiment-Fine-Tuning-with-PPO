@@ -29,10 +29,13 @@ python script.py
 ### Code Overview
 #### `build_dataset`
 The `build_dataset` function constructs the dataset for training. It tokenizes the IMDB reviews, filters out reviews with less than 200 tokens, and truncates the reviews to a random length for input.
+
 #### `collator`
 The `collator` function formats the data into batches.
-#### Main Training Loop
 The main training loop fine-tunes the model using PPO. It involves generating responses, calculating rewards using a sentiment analysis model, and updating the model.
+
+#### Main Training Loop
+The main training loop fine-tunes the model using PPO. It involves generating responses, calculating rewards using a sentiment analysis model, and updating the model. 
 
 ### Saving the Model
 The model and tokenizer are saved after training to the specified directory.
@@ -41,7 +44,7 @@ The model and tokenizer are saved after training to the specified directory.
 The fine-tuned model is available on Hugging Face. You can use the inference API to test the model and generate responses with custom input.
 
 #### Inference API
-you can test the model using Hugging Face Inference API: [Hugging Face]([https://huggingface.co](https://huggingface.co/pt-sk/GPT2-IMDB-Sentiment-FineTuning-with-PPO/edit/main/README.md))
+you can test the model using Hugging Face Inference API: [Hugging Face](https://huggingface.co/pt-sk/GPT2-IMDB-Sentiment-FineTuning-with-PPO/edit/main/README.md)
 
 #### Model Weights and Tokenizer
 The model and tokenizer files can be accessed in the files section of the above link
