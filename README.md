@@ -23,7 +23,7 @@ pip install torch tqdm transformers datasets trl wandb
 ### Usage
 To start the training process, simply run the script:
 ```bash
-python script.py
+python train.py
 ```
 
 ### Code Overview
