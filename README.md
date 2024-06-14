@@ -33,11 +33,7 @@ The model and tokenizer are saved after training to the specified directory.
 
 ### Hugging Face Model
 The fine-tuned model is available on Hugging Face. You can use the inference API to test the model and generate responses with custom input.
-
-#### Inference API
 you can test the model using Hugging Face Inference API: [Hugging Face](https://huggingface.co/pt-sk/GPT2-IMDB-Sentiment-FineTuning-with-PPO/edit/main/README.md)
-
-#### Model Weights and Tokenizer
 The model and tokenizer files can be accessed in the files section of the above link
 
 ### Reference Papers
