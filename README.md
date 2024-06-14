@@ -7,9 +7,6 @@ This repository contains code for fine-tuning a GPT-2 model on the IMDB dataset 
 * Installation
 * Usage
 * Code Overview
-  * build_dataset
-  * collator
-  * Main Training Loop
 * Saving the Model
 * Hugging Face Model
 * Reference Papers
@@ -27,15 +24,9 @@ python train.py
 ```
 
 ### Code Overview
-#### `build_dataset`
-The `build_dataset` function constructs the dataset for training. It tokenizes the IMDB reviews, filters out reviews with less than 200 tokens, and truncates the reviews to a random length for input.
-
-#### `collator`
-The `collator` function formats the data into batches.
-The main training loop fine-tunes the model using PPO. It involves generating responses, calculating rewards using a sentiment analysis model, and updating the model.
-
-#### Main Training Loop
-The main training loop fine-tunes the model using PPO. It involves generating responses, calculating rewards using a sentiment analysis model, and updating the model. 
+1. The `build_dataset` function constructs the dataset for training. It tokenizes the IMDB reviews, filters out reviews with less than 200 tokens, and truncates the reviews to a random length for input.
+2. The `collator` function formats the data into batches.
+3. The main training loop fine-tunes the model using PPO. It involves generating responses, calculating rewards using a sentiment analysis model, and updating the model.
 
 ### Saving the Model
 The model and tokenizer are saved after training to the specified directory.
