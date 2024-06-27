@@ -14,7 +14,7 @@ This repository contains code for fine-tuning a GPT-2 model on the IMDB dataset 
 ### Installation
 To run the code, you need to install the required packages. You can do this using `pip`:
 ```bash
-pip install torch tqdm transformers datasets trl wandb
+pip install requirements.txt
 ```
 
 ### Usage
